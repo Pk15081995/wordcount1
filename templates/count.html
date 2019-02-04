@@ -1,0 +1,18 @@
+<style>
+
+    body{background-color:rgb(150, 60, 130);}
+</style>
+
+<body>
+<h1>counted</h1>
+<h2>your text</h2>
+{{word}}
+<br><hr>
+total words= {{len}}
+<br><hr>
+<h2>Each words=</h2><hr>
+{% for words,value in text %}
+{{ words }}={{ value }}
+<br>
+{% endfor %}
+</body>
